@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Business Espionage | Case Competition 2026</title>
+  <meta name="description" content="Join The Business Espionage Case Competition 2026. Empowering Minds. Engineering Solutions. Hosted by Pantheon Consulting and Jayciana (JSS STU).">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+  <!-- GSAP & ScrollTrigger Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <!-- Application JS -->
+  <script defer src="app.js"></script>
+</head>
+<body>
+
+  <!-- Minimalist Masthead / Newspaper Header -->
+  <header class="newspaper-header">
+    <div class="header-top-meta">
+      <span class="meta-item">EDITION 2026 &bull; VOL. I</span>
+      <span class="meta-item logo-wreath-text">
+        <svg class="wreath-mini" viewBox="0 0 100 100">
+          <path d="M 50 20 A 30 30 0 0 0 50 80 A 30 30 0 0 0 50 20 Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 2"/>
+          <polygon points="50,38 42,55 58,55" fill="currentColor"/>
+          <rect x="47" y="55" width="6" height="15" fill="currentColor"/>
+          <line x1="43" y1="70" x2="57" y2="70" stroke="currentColor" stroke-width="2"/>
+        </svg>
+        PANTHEON CONSULTING
+      </span>
+      <span class="meta-item">JSS STU CAMPUS</span>
+    </div>
+    
+    <div class="masthead-title-container">
+      <h1 class="masthead-main-title">THE BUSINESS ESPIONAGE</h1>
+      <div class="masthead-subtitle">JSSSTU Case Competition 2026</div>
+    </div>
+
+    <div class="header-bottom-meta">
+      <span class="meta-price">PRESENTED BY: JAYCIANA 2026</span>
+      <span class="meta-slogan">"EMPOWERING MINDS. ENGINEERING SOLUTIONS."</span>
+      <span class="meta-page">PAGE 01</span>
+    </div>
+  </header>
+
+  <!-- Section 1: Hero - The Strategist's Lounge -->
+  <section id="hero" class="hero-section">
+    <div class="hero-grid">
+      
+      <!-- Left Column: Copy & Details -->
+      <div class="hero-left">
+        <div class="editorial-category">EXECUTIVE SUMMARY</div>
+        <h2 class="hero-headline">Think Like a Strategist.</h2>
+        <p class="hero-subtext">
+          Step into the world of corporate strategy. Pantheon Consulting and Jayciana 2026 invite you to resolve a high-stakes business case in an immersive strategic simulation.
+        </p>
+        
+        <!-- Premium Dossier-Style Details Card -->
+        <div class="dossier-card">
+          <div class="dossier-line">
+            <span class="dossier-label">PRESENTER</span>
+            <span class="dossier-value">Jayciana 2026 (JSS STU)</span>
+          </div>
+          <div class="dossier-line">
+            <span class="dossier-label">TIMELINE</span>
+            <span class="dossier-value">30th June - 1st July</span>
+          </div>
+          <div class="dossier-line">
+            <span class="dossier-label">VENUE</span>
+            <span class="dossier-value">JSSSTU Campus</span>
+          </div>
+          <div class="dossier-line">
+            <span class="dossier-label">DIRECTOR</span>
+            <span class="dossier-value">Shreyas (9108907662)</span>
+          </div>
+          <div class="dossier-line">
+            <span class="dossier-label">CONTACT</span>
+            <span class="dossier-value font-mono">mraoshreyas@gmail.com</span>
+          </div>
+        </div>
+
+        <button class="cta-button" onclick="document.getElementById('briefing').scrollIntoView({ behavior: 'smooth' })">
+          Step Into the Briefing
+        </button>
+      </div>
+
+      <!-- Right Column: Tasteful Collage Frame -->
+      <div class="hero-right">
+        <div class="collage-container">
+          <div class="chessboard-bg"></div>
+          <div class="base-image-wrapper">
+            <img src="hero_strategist.png" alt="Strategist" class="base-image">
+          </div>
+          <div class="overlay-image-wrapper">
+            <img src="collaboration.png" alt="Collaborative analysis" class="overlay-image">
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- Premium Pull-Quote Section: "Money talks. We translate." (Verbatim from Image 38) -->
+  <section class="editorial-quote-section">
+    <div class="quote-container">
+      <div class="quote-border-line"></div>
+      <h3 class="editorial-headline-quote">"Money talks. We translate."</h3>
+      <div class="quote-border-line"></div>
+    </div>
+  </section>
+
+  <!-- Section 2: The Briefing - Competition Expectation Rows -->
+  <section id="briefing" class="briefing-section">
+    <div class="briefing-header">
+      <div class="editorial-category">THE BLUEPRINT</div>
+      <h3 class="briefing-title-serif">WHAT TO EXPECT</h3>
+      <p class="briefing-subtitle">Key components of the business case competition</p>
+    </div>
+
+    <!-- Expectation Rows -->
+    <div class="expectation-rows-container">
+      
+      <div class="expectation-row">
+        <div class="row-num">01</div>
+        <div class="row-content">
+          <h4 class="row-title">In-Depth Case Analysis</h4>
+          <p class="row-desc">Deconstruct intricate business problems with corporate competitor angles. Unveil market opportunities and map organizational vulnerabilities.</p>
+        </div>
+        <div class="row-action">
+          <div class="circle-arrow-btn">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="expectation-row">
+        <div class="row-num">02</div>
+        <div class="row-content">
+          <h4 class="row-title">Teamwork & Collaboration</h4>
+          <p class="row-desc">Leverage team synergy to design robust corporate strategies. Work under strict operational timelines with a 3-member crew.</p>
+        </div>
+        <div class="row-action">
+          <div class="circle-arrow-btn">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="expectation-row">
+        <div class="row-num">03</div>
+        <div class="row-content">
+          <h4 class="row-title">Exciting Prizes & Recognition</h4>
+          <p class="row-desc">Win cash rewards and command prestige in the consulting circle. Top strategies will be published in official briefings.</p>
+        </div>
+        <div class="row-action">
+          <div class="circle-arrow-btn">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="expectation-row">
+        <div class="row-num">04</div>
+        <div class="row-content">
+          <h4 class="row-title">Learn. Lead. Make an Impact</h4>
+          <p class="row-desc">Establish dynamic industry networks, sharpen corporate intelligence, and present to elite corporate leaders.</p>
+        </div>
+        <div class="row-action">
+          <div class="circle-arrow-btn">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- NEW SECTION: Understanding Case Competitions (Structured for GSAP Radial Reveal) -->
+  <section id="case-education" class="case-education-section">
+    <div class="case-edu-grid">
+      
+      <!-- Left Column: Explanation -->
+      <div class="case-edu-left">
+        <div class="editorial-category">OPERATIONAL BRIEFING</div>
+        <h3 class="briefing-title-serif">WHAT IS A CASE COMPETITION?</h3>
+        <p class="case-edu-text">
+          A case competition is a high-level academic and professional simulation where teams of students are presented with a real-life business problem faced by an organization. 
+        </p>
+        <p class="case-edu-text">
+          Within a limited time frame, teams must conduct market research, analyze operational data, construct financial sheets, and formulate executable strategies. The event culminates in a presentation where teams pitch their solutions directly to a panel of expert corporate judges.
+        </p>
+
+        <!-- Process steps layout -->
+        <div class="process-steps">
+          <div class="step-card">
+            <span class="step-badge">STAGE 01</span>
+            <h5 class="step-title">The Dossier Release</h5>
+            <p class="step-desc">Teams receive a detailed briefing package detailing a real company's market challenges and financial reports.</p>
+          </div>
+          <div class="step-card">
+            <span class="step-badge">STAGE 02</span>
+            <h5 class="step-title">Strategic Formulation</h5>
+            <p class="step-desc">Teams collaborate to identify core problems, run financial projections, and design high-impact solutions.</p>
+          </div>
+          <div class="step-card">
+            <span class="step-badge">STAGE 03</span>
+            <h5 class="step-title">The Executive Pitch</h5>
+            <p class="step-desc">Candidates pitch their recommendations slide deck to a board of corporate directors and answer critical inquiries.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Visual Frame Collage -->
+      <div class="case-edu-right">
+        <div class="edu-collage-container">
+          <div class="edu-image-wrapper top-wrapper">
+            <img src="case_work.png" alt="Students working on charts" class="edu-img">
+            <div class="edu-caption"><strong>Fig 4:</strong> Analysis of competitor financials and strategic projections.</div>
+          </div>
+          <div class="edu-image-wrapper bottom-wrapper">
+            <img src="case_presentation.png" alt="Student presenting to judges" class="edu-img">
+            <div class="edu-caption"><strong>Fig 5:</strong> Pitching the final recommendation deck to corporate directors.</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section 3: Case Briefing - Executive Message -->
+  <section id="osint" class="osint-section">
+    <div class="osint-container">
+      
+      <!-- Text details on Left -->
+      <div class="osint-left">
+        <div class="editorial-category">EXECUTIVE MESSAGE</div>
+        <h3 class="briefing-title-serif">REVIEW THE COMPETITION CASE</h3>
+        <p class="osint-desc">
+          Pantheon Consulting has compiled an executive video brief. Scroll down to reveal the case lounge, then click the strategist figure perched on the middle finger fingerprint to launch the video message from Shreyas.
+        </p>
+        
+        <!-- Elegant Newspaper Bulletin Ticker Box -->
+        <div class="status-ticket-card">
+          <div class="status-indicator">
+            <span class="pulse-dot"></span>
+            <span class="status-text-bold">COMPETITION STATUS: REGISTRATIONS OPEN</span>
+          </div>
+          <div class="ticket-body">
+            <p class="ticket-desc">Awaiting candidate submissions. Click the central target node below to initiate the video briefing.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hand graphic container on Right -->
+      <div class="osint-right">
+        <div class="hand-card-frame">
+          <div class="hand-wrapper" id="hand-wrapper">
+            <img src="hand_osint.png" alt="Briefing Hand" class="hand-img">
+            
+            <!-- Perched interactive figure hotspot -->
+            <div class="hotspot-trigger" id="hotspot-trigger">
+              <div class="hotspot-ring"></div>
+              <div class="hotspot-core">
+                <svg class="mini-strategist" viewBox="0 0 64 64">
+                  <circle cx="32" cy="12" r="6" fill="currentColor"/>
+                  <polygon points="32,20 29,26 35,26" fill="#fff"/>
+                  <polygon points="32,24 30,36 34,36" fill="#ff4d4d"/>
+                  <path d="M 16 28 C 16 20, 48 20, 48 28 L 44 48 L 20 48 Z" fill="currentColor"/>
+                  <rect x="23" y="48" width="6" height="14" fill="currentColor"/>
+                  <rect x="35" y="48" width="6" height="14" fill="currentColor"/>
+                </svg>
+                <div class="hotspot-play">
+                  <svg viewBox="0 0 24 24" width="16" height="16">
+                    <polygon points="6,4 20,12 6,20" fill="currentColor"/>
+                  </svg>
+                </div>
+              </div>
+              <span class="hotspot-label">PLAY VIDEO BRIEF</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section 4: Our Operations - Call for Sponsors -->
+  <section id="operations" class="operations-section">
+    <div class="editorial-category center">COOPERATIVE ALLIANCES</div>
+    <h3 class="briefing-title-serif center">OPERATIONS SUPPORTED BY</h3>
+    
+    <!-- Sponsor Logos Marquee -->
+    <div class="sponsor-marquee-container">
+      <div class="sponsor-marquee">
+        <div class="sponsor-logo">STUDY ABROAD CO.</div>
+        <div class="sponsor-logo">SKILL BOOTCAMPS</div>
+        <div class="sponsor-logo">THE COFFEE LAB</div>
+        <div class="sponsor-logo">METROPOLIS CAFE</div>
+        <!-- Duplicate for loop -->
+        <div class="sponsor-logo">STUDY ABROAD CO.</div>
+        <div class="sponsor-logo">SKILL BOOTCAMPS</div>
+        <div class="sponsor-logo">THE COFFEE LAB</div>
+        <div class="sponsor-logo">METROPOLIS CAFE</div>
+      </div>
+    </div>
+
+    <!-- Sponsorship Packages Layout -->
+    <div class="sponsorship-layout">
+      <!-- Left column: Small graphic frame -->
+      <div class="sponsor-left-visual">
+        <div class="sponsor-visual-card">
+          <img src="sponsor_concept.png" alt="Become a Sponsor" class="sponsor-visual-img">
+          <div class="visual-caption"><strong>Briefing Slide 8:</strong> Strategic Partner Recruitment operations.</div>
+        </div>
+      </div>
+
+      <!-- Right column: Sponsorship Packages grid -->
+      <div class="sponsor-right-packages">
+        
+        <div class="pkg-box platinum-card">
+          <div class="pkg-top">
+            <span class="pkg-badge">PLATINUM SPONSOR</span>
+            <span class="pkg-price">₹30,000</span>
+          </div>
+          <h4 class="pkg-heading">TITLE SPONSOR</h4>
+          <ul class="pkg-features">
+            <li>Prime visibility across <em>all</em> events</li>
+            <li>Exclusive speaking slot at the flagship event</li>
+            <li>Premier Dedicated Stall at Pantheon event</li>
+            <li>Recognition in post-event reports</li>
+            <li>Brand name linked to Pantheon promotions</li>
+          </ul>
+        </div>
+
+        <div class="pkg-box gold-card">
+          <div class="pkg-top">
+            <span class="pkg-badge">GOLD SPONSOR</span>
+            <span class="pkg-price">₹20,000</span>
+          </div>
+          <h4 class="pkg-heading">ASSOCIATE SPONSOR</h4>
+          <ul class="pkg-features">
+            <li>Website recognition on event pages</li>
+            <li>Dedicated Stall in the fest</li>
+            <li>Brand name linked to Pantheon promotions</li>
+            <li>Name and logo on stage branding, banners, certificates, and promotional materials</li>
+            <li>Speaking opportunity at a major event</li>
+            <li>Mention in promotional content and certificates</li>
+            <li>Social media shoutouts</li>
+          </ul>
+        </div>
+
+        <div class="pkg-box bronze-card">
+          <div class="pkg-top">
+            <span class="pkg-badge">BRONZE SPONSOR</span>
+            <span class="pkg-price">₹15,000</span>
+          </div>
+          <h4 class="pkg-heading">CO-SPONSOR</h4>
+          <ul class="pkg-features">
+            <li>Logo featured on all event materials and stage branding</li>
+            <li>Speaking opportunity at a major event</li>
+            <li>Mention in promotional content and certificates</li>
+            <li>Social media shoutouts</li>
+          </ul>
+        </div>
+
+        <div class="pkg-box silver-card">
+          <div class="pkg-top">
+            <span class="pkg-badge">SILVER SPONSOR</span>
+            <span class="pkg-price">₹10,000</span>
+          </div>
+          <h4 class="pkg-heading">SUPPORTING SPONSOR</h4>
+          <ul class="pkg-features">
+            <li>Logo featured on banners and certificates</li>
+            <li>Recognition in social media promotions</li>
+            <li>Mention in post-event recap</li>
+            <li>Certificate recognition</li>
+            <li>Multiple social media shoutouts during Pantheon</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5: The Final Move - Contact & Registration -->
+  <footer id="contact" class="final-footer">
+    
+    <!-- Giant Scrolling Marquee -->
+    <div class="huge-marquee-wrapper">
+      <div class="huge-marquee-text">
+        INTELLIGENCE IS AN ASSET &bull; STRATEGY IS THE KEY &bull; THINK LIKE A STRATEGIST &bull; 
+      </div>
+    </div>
+
+    <div class="footer-grid">
+      <!-- Contact Info & Social Links -->
+      <div class="footer-contact-block">
+        <div class="footer-title">CONTACT INFORMATION</div>
+        <div class="contact-rows">
+          <div class="c-person">
+            <span class="c-name">SHREYAS</span>
+            <span class="c-phone">9108907662</span>
+          </div>
+          <div class="c-person">
+            <span class="c-name">ACHINTH</span>
+            <span class="c-phone">9606912984</span>
+          </div>
+        </div>
+        
+        <!-- Socials & Mail (Verbatim placement) -->
+        <div class="contact-socials">
+          <a href="https://www.instagram.com/pantheon.consulting_/" target="_blank" class="footer-social-link">
+            <svg class="icon-social" viewBox="0 0 24 24" width="16" height="16">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="2"/>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="none" stroke="currentColor" stroke-width="2"/>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="currentColor" stroke-width="2"/>
+            </svg>
+            @pantheon.consulting_
+          </a>
+          <a href="mailto:mraoshreyas@gmail.com" class="footer-social-link">
+            <svg class="icon-social" viewBox="0 0 24 24" width="16" height="16">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" fill="none" stroke="currentColor" stroke-width="2"/>
+              <polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2"/>
+            </svg>
+            mraoshreyas@gmail.com
+          </a>
+        </div>
+      </div>
+
+      <!-- Center quote & QR code -->
+      <div class="footer-qr-block">
+        <div class="footer-qr-container">
+          <span class="qr-text">SCAN TO REGISTER</span>
+          <svg class="qr-svg-code" viewBox="0 0 100 100" width="90" height="90">
+            <rect width="100" height="100" fill="#f2f1ed" rx="4"/>
+            <g fill="#1a1a1a">
+              <!-- Top Left Marker -->
+              <rect x="10" y="10" width="25" height="25"/>
+              <rect x="15" y="15" width="15" height="15" fill="#f2f1ed"/>
+              <rect x="18" y="18" width="9" height="9"/>
+              
+              <!-- Top Right Marker -->
+              <rect x="65" y="10" width="25" height="25"/>
+              <rect x="70" y="15" width="15" height="15" fill="#f2f1ed"/>
+              <rect x="73" y="18" width="9" height="9"/>
+              
+              <!-- Bottom Left Marker -->
+              <rect x="10" y="65" width="25" height="25"/>
+              <rect x="15" y="70" width="15" height="15" fill="#f2f1ed"/>
+              <rect x="18" y="73" width="9" height="9"/>
+              
+              <!-- Random Data Dots -->
+              <rect x="40" y="10" width="5" height="5"/>
+              <rect x="50" y="15" width="5" height="10"/>
+              <rect x="45" y="25" width="10" height="5"/>
+              <rect x="10" y="45" width="5" height="5"/>
+              <rect x="15" y="50" width="5" height="5"/>
+              <rect x="25" y="40" width="5" height="10"/>
+              <rect x="30" y="55" width="10" height="5"/>
+              <rect x="45" y="40" width="5" height="5"/>
+              <rect x="55" y="45" width="15" height="5"/>
+              <rect x="50" y="55" width="5" height="15"/>
+              <rect x="40" y="65" width="10" height="5"/>
+              <rect x="40" y="75" width="5" height="10"/>
+              <rect x="65" y="40" width="10" height="5"/>
+              <rect x="75" y="50" width="5" height="15"/>
+              <rect x="85" y="45" width="5" height="10"/>
+              <rect x="65" y="70" width="15" height="5"/>
+              <rect x="80" y="75" width="5" height="5"/>
+              <rect x="75" y="85" width="15" height="5"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-copyright">
+      &copy; 2026 Pantheon Consulting. All rights reserved. JSSSTU Campus Case Hub.
+    </div>
+  </footer>
+
+  <!-- Telemetry Transmission Popup (WSJ Theme Player) -->
+  <div class="video-modal-overlay" id="video-modal">
+    <div class="video-modal-container">
+      <div class="video-modal-header">
+        <span class="video-title-tag">CONFERENCE BRIEFING // PRESENTED BY: SHREYAS</span>
+        <button class="video-close-btn" id="video-close-btn">
+          <svg viewBox="0 0 24 24" width="20" height="20">
+            <line x1="18" y1="6" x2="6" y2="18" stroke="currentColor" stroke-width="2"/>
+            <line x1="6" y1="6" x2="18" y2="18" stroke="currentColor" stroke-width="2"/>
+          </svg>
+        </button>
+      </div>
+      
+      <div class="video-player-wrapper">
+        <canvas id="video-canvas" class="video-display-canvas"></canvas>
+        <div class="video-overlay-glitch"></div>
+        <div class="video-watermark">PANTHEON CASE BRIEF</div>
+        <div class="video-rec-dot"></div>
+        
+        <div class="video-status-overlay" id="video-status-overlay">
+          <button class="video-central-play-btn" id="video-central-play">
+            <svg viewBox="0 0 24 24" width="36" height="36">
+              <polygon points="6,4 20,12 6,20" fill="currentColor"/>
+            </svg>
+          </button>
+          <span class="video-status-text">PLAY VIDEO MESSAGE</span>
+        </div>
+        
+        <div class="video-captions" id="video-captions">
+          [AWAITING BRIEFING INITIALIZATION]
+        </div>
+      </div>
+      
+      <!-- Controller Console -->
+      <div class="video-controls-bar">
+        <button class="control-btn" id="video-play-toggle" title="Play/Pause">
+          <svg class="icon-play" id="icon-play" viewBox="0 0 24 24" width="16" height="16">
+            <polygon points="5,3 19,12 5,21" fill="currentColor"/>
+          </svg>
+          <svg class="icon-pause hidden" id="icon-pause" viewBox="0 0 24 24" width="16" height="16">
+            <rect x="6" y="4" width="4" height="16" fill="currentColor"/>
+            <rect x="14" y="4" width="4" height="16" fill="currentColor"/>
+          </svg>
+        </button>
+        
+        <div class="timeline-slider-wrapper">
+          <div class="timeline-time-display" id="time-current">0:00</div>
+          <div class="timeline-bar-bg" id="timeline-progress-bar">
+            <div class="timeline-bar-fill" id="timeline-progress-fill"></div>
+            <div class="timeline-bar-handle" id="timeline-progress-handle"></div>
+          </div>
+          <div class="timeline-time-display" id="time-total">0:25</div>
+        </div>
+
+        <button class="control-btn" id="video-sound-toggle" title="Mute/Unmute">
+          <svg class="icon-unmuted" id="icon-unmuted" viewBox="0 0 24 24" width="16" height="16">
+            <polygon points="11,5 6,9 2,9 2,15 6,15 11,19" fill="currentColor"/>
+            <path d="M15.54 8.46a5 5 0 0 1 0 7.07" fill="none" stroke="currentColor" stroke-width="2"/>
+            <path d="M19.07 4.93a10 10 0 0 1 0 14.14" fill="none" stroke="currentColor" stroke-width="2"/>
+          </svg>
+          <svg class="icon-muted hidden" id="icon-muted" viewBox="0 0 24 24" width="16" height="16">
+            <polygon points="11,5 6,9 2,9 2,15 6,15 11,19" fill="currentColor"/>
+            <line x1="23" y1="9" x2="17" y2="15" stroke="currentColor" stroke-width="2"/>
+            <line x1="17" y1="9" x2="23" y2="15" stroke="currentColor" stroke-width="2"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
