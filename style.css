@@ -1089,8 +1089,10 @@ p {
   letter-spacing: 0.1em;
 }
 
-.qr-svg-code {
+.qr-svg-code, .qr-image {
   display: block;
+  object-fit: contain;
+  mix-blend-mode: multiply;
 }
 
 .footer-copyright {
