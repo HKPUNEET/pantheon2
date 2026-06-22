@@ -102,13 +102,16 @@ p {
 .logo-wreath-text {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
   color: var(--accent-teal);
+  font-size: clamp(0.95rem, 2.5vw, 1.4rem); /* Extremely responsive and dominant size */
+  font-weight: 900;
+  letter-spacing: 0.18em;
 }
 
 .wreath-mini {
-  width: 16px;
-  height: 16px;
+  width: clamp(22px, 4vw, 30px);
+  height: clamp(22px, 4vw, 30px);
 }
 
 .masthead-title-container {
@@ -1383,6 +1386,20 @@ p {
 @media (max-width: 768px) {
   .newspaper-header {
     padding: 0 20px;
+  }
+
+  .header-top-meta {
+    flex-direction: column;
+    gap: 8px;
+    padding: 12px 0;
+    text-align: center;
+  }
+
+  .header-bottom-meta {
+    flex-direction: column;
+    gap: 8px;
+    padding: 12px 0;
+    text-align: center;
   }
   
   .hero-section {
